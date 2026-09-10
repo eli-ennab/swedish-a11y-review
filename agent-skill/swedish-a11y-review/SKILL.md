@@ -1,5 +1,5 @@
 ---
-name: sweden-accessibility-review
+name: swedish-a11y-review
 description: Review frontend code changes for accessibility under Swedish public-sector and consumer e-commerce rules. Use for Swedish websites, apps, public digital services, online shops, checkout, payments, identification, or accessibility statements. This is a change review, not legal advice or a full conformance audit.
 ---
 
