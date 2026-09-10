@@ -1,4 +1,4 @@
-# Swedish accessibility review method
+# swedish-a11y-review
 
 Review the relevant Git diff and rendered behavior for accessibility
 regressions. Apply the correct Swedish regime before attaching legal
@@ -8,13 +8,13 @@ significance to a finding.
 
 Classify the project as one or more of:
 
-- **Public digital service:** potentially subject to lag (2018:1937) om
-  tillganglighet till digital offentlig service (DOS-lagen).
-- **Consumer e-commerce:** potentially subject to lag (2023:254) om vissa
-  produkters och tjansters tillganglighet (LPTT) and PTSFS 2024:6.
-- **Both:** for example, a public actor offering an in-scope consumer service.
-- **Voluntary review:** no legal regime is established, but Swedish
-  accessibility best practice is requested.
+- **Public digital service:** potentially subject to the law (2018:1937) about
+  "Tillgänglighet till digital offentlig service" (DOS-lagen).
+- **Consumer e-commerce:** potentially subject to the law (2023:254) about "Vissa
+  produkters och tjänsters tillgänglighet" (LPTT) and PTSFS 2024:6.
+- **Both laws may apply:** assess DOS-lagen and LPTT independently.
+- **Best-practice only:** neither law has been shown to apply; review against
+  accessibility and WCAG guidance without describing findings as legal violations.
 
 Infer scope from repository evidence when possible. Consider the actor,
 intended users, B2C versus B2B purpose, service type, release date, third-party
@@ -110,27 +110,38 @@ solely on WCAG level.
 
 ## Output
 
-Lead with findings, ordered by severity. For each finding include:
+Keep the report short and easy to scan. Do not repeat the review method, provide
+a general accessibility tutorial, or summarize legislation before the
+findings. Group occurrences with the same cause and remediation into one
+finding. Do not omit a material finding merely to shorten the report.
 
-- classification and severity
-- file and line, route, component, or journey
-- observed evidence and affected users
-- applicable Swedish regime and exact provision or technical standard clause
-  when established
-- related WCAG success criterion and level when useful
-- a minimal remediation and a concrete verification method
+Lead with findings in severity order. Use this compact format for each one:
 
-Then include:
+```text
+### [High] Short problem title — Confirmed
+`path/to/file:line` · affected component or journey
 
-- **Scope used:** public sector, consumer e-commerce, both, or voluntary; list
-  assumptions.
-- **Checks performed:** code inspection, commands, rendered tests, and assistive
-  technology used.
-- **Manual checks remaining:** especially keyboard flow, screen-reader
-  announcements, content alternatives, contrast, zoom/reflow, cognitive
-  clarity, and third-party checkout or identity flows.
-- **No findings:** if applicable, state only that no issues were identified in
-  the reviewed scope. Never call that conformance.
+Problem: What happens and who is affected.
+Basis: DOS-lagen 10 § · EN 301 549 clause · WCAG criterion, as applicable.
+Fix: The smallest practical correction.
+Verify: One concrete test.
+```
+
+Use only applicable legal and technical references in `Basis`; omit labels that
+are not established or useful. Keep each field to one or two sentences. Link an
+official legal source once per applicable law, not repeatedly in every finding.
+
+Finish with a compact **Review notes** section containing only:
+
+- **Scope:** applicable regime and material assumptions
+- **Checked:** code, commands, or rendered behavior actually examined
+- **Still manual:** only important checks that remain unresolved
+- **Sources:** documents consulted and source revision
+
+Omit `Still manual` when nothing material remains. Do not include a long list of
+checks that passed. If there are no findings, say: `No accessibility issues were
+identified in the reviewed scope.` Then include the review notes and make clear
+that this is not a conformance finding.
 
 Report in the user's language while retaining the official Swedish names of
 laws and authorities. Cite current official sources when making legal claims in

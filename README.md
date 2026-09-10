@@ -1,32 +1,45 @@
 # Swedish A11y Review
 
-Review frontend changes against Swedish accessibility laws, standards, and
-WCAG guidance.
+Review frontend changes against WCAG and Swedish accessibility requirements for
+public-sector services and consumer e-commerce.
 
-## Use it in another repository
+The review covers:
 
-1. Copy `agent-skill/sweden-accessibility-review/` to
-   `.agents/skills/sweden-accessibility-review/` in the target repository.
-2. Add this to the target repository's `.gitignore`:
+- **DOS-lagen:** _DOS-lagen, eller lagen 2018:1937 om tillgänglighet till digital offentlig service_
+- **LPTT/EU:s tillgänglighetsdirektiv:** _LPTT, eller lagen (2023:254) om vissa produkters och tjänsters tillgänglighet_
+
+Depending on the project, the skill reviews against DOS-lagen, LPTT, or both.
+If neither law is shown to apply, it can still perform a best-practice review
+against WCAG without describing findings as legal violations.
+
+## Install in a project
+
+1. Copy the folder `agent-skill/swedish-a11y-review/` into your project as
+   `.agents/skills/swedish-a11y-review/`.
+2. Add this to the project's `.gitignore`, unless the entire `tools/` directory
+   is already ignored:
 
 ```gitignore
-tools/swedish-a11y-review/
+/tools/swedish-a11y-review/
 ```
 
-The skill clones or updates this repository in that gitignored directory, so
-each review uses the latest source documents. The first run requires Git and
-network access.
+That is all the setup required. On first use, the skill clones this repository
+into the ignored directory. Later reviews update that copy automatically, so
+they use the latest source documents. Git and network access are required.
 
-## Run it
+## Use the skill
 
-Invoke `sweden-accessibility-review` using your agent's skill syntax. For
-example, in Codex:
+Ask your agent to use `swedish-a11y-review`. For example, in Codex:
 
 ```text
-$sweden-accessibility-review Review my current frontend changes.
+$swedish-a11y-review Review my current frontend changes.
 ```
+
+The review starts with the relevant Git changes and inspects related code and
+rendered behavior when needed. It is a focused review, not a complete legal or
+WCAG conformance audit.
 
 ## Source documents
 
 - [Review method](references/review-method.md)
-- [Swedish legal baseline](references/swedish-law.md)
+- [Swedish laws and legal baseline](references/swedish-law.md)

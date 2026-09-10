@@ -2,9 +2,9 @@
 
 Use this reference to select the applicable regime and describe its relationship to technical standards. It is a maintained review aid, not a substitute for the current legal text. The sources below were checked on 2026-09-10.
 
-## Public digital service: DOS-lagen
+## DOS-lagen: offentlig digital service
 
-Primary law: [Lag (2018:1937) om tillganglighet till digital offentlig service](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-20181937-om-tillganglighet-till-digital_sfs-2018-1937/).
+Primary law: [Lag (2018:1937) om tillgänglighet till digital offentlig service](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-20181937-om-tillganglighet-till-digital_sfs-2018-1937/) (DOS-lagen).
 
 Potential scope includes state and municipal authorities, municipal or regional assemblies, publicly governed bodies, specified publicly financed private actors, and certain education providers. Read the current definitions and exclusions before concluding that an actor or content is covered.
 
@@ -16,12 +16,12 @@ Digg states that its requirements correspond to Annex A of EN 301 549 V3.2.1 (20
 
 Official guidance:
 
-- [Digg: Digital offentlig service ska vara tillganglig](https://www.digg.se/kunskap-och-stod/regler-och-rekommendationer/regler-och-rekommendationer/digital-offentlig-service-ska-vara-tillganglig)
+- [Digg: Digital offentlig service ska vara tillgänglig](https://www.digg.se/kunskap-och-stod/regler-och-rekommendationer/regler-och-rekommendationer/digital-offentlig-service-ska-vara-tillganglig)
 - [Digg: WCAG 2.1 AA och EN 301 549 Annex A](https://www.digg.se/kunskap-och-stod/regler-och-rekommendationer/regler-och-rekommendationer/pa-webbriktlinjer-finns-lagkrav-och-rekommendationer)
 
-## Consumer e-commerce: LPTT
+## LPTT: e-handel för konsumenter
 
-Primary law: [Lag (2023:254) om vissa produkters och tjansters tillganglighet](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-2023254-om-vissa-produkters-och-tjansters_sfs-2023-254/). It entered into force on 28 June 2025.
+Primary law: [Lag (2023:254) om vissa produkters och tjänsters tillgänglighet](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-2023254-om-vissa-produkters-och-tjansters_sfs-2023-254/) (LPTT). It entered into force on 28 June 2025.
 
 An e-commerce service is, in summary, a remotely supplied website or mobile service provided electronically at a consumer's individual request for the purpose of concluding a consumer contract. Do not automatically apply this classification to purely B2B sites, informational catalogues with no consumer-contract purpose, or unrelated internal software.
 
@@ -31,7 +31,7 @@ Services supplied by a microenterprise are exempt under section 10. The statutor
 
 Requirements may also be disapplied where compliance would fundamentally alter the service or impose a disproportionate burden. Such reliance generally requires a documented, reasoned assessment and notification; a code reviewer should flag the issue for legal review rather than decide it.
 
-PTSFS 2024:6 requires e-commerce services to meet the general service requirements and, specifically, to:
+[Post- och telestyrelsens föreskrifter (PTSFS 2024:6) om vissa tjänsters tillgänglighet](https://pts.se/regelbibliotek/foreskrifter-om-vissa-tjansters-tillganglighet/) require e-commerce services to meet the general service requirements and, specifically, to:
 
 - reproduce available accessibility information about products and services sold
 - make identification, security, and payment functions perceivable, operable, understandable, and robust when part of the service
@@ -43,10 +43,10 @@ Current PTS guidance says EN 301 549 V3.2.1 covers much of the functional requir
 
 Official guidance and regulation:
 
-- [PTS: Lagen om vissa produkters och tjansters tillganglighet](https://pts.se/digital-inkludering/lagen-om-vissa-produkters-och-tjansters-tillganglighet/)
-- [PTS: Tillganglighetskrav](https://pts.se/digital-inkludering/lagkrav/introduktion-till-tillganglighetsdirektivet/tillganglighetskrav/)
-- [PTS: Branschspecifika krav for e-handel](https://pts.se/digital-inkludering/lagkrav/introduktion-till-tillganglighetsdirektivet/branschspecifika-krav/)
-- [PTSFS 2024:6](https://pts.se/regelbibliotek/foreskrifter-om-vissa-tjansters-tillganglighet/)
+- [PTS: Lagen om vissa produkters och tjänsters tillgänglighet](https://pts.se/digital-inkludering/lagen-om-vissa-produkters-och-tjansters-tillganglighet/)
+- [PTS: Tillgänglighetskrav](https://pts.se/digital-inkludering/lagkrav/introduktion-till-tillganglighetsdirektivet/tillganglighetskrav/)
+- [PTS: Branschspecifika krav för e-handel](https://pts.se/digital-inkludering/lagkrav/introduktion-till-tillganglighetsdirektivet/branschspecifika-krav/)
+- [Post- och telestyrelsens föreskrifter (PTSFS 2024:6) om vissa tjänsters tillgänglighet](https://pts.se/regelbibliotek/foreskrifter-om-vissa-tjansters-tillganglighet/)
 
 ## When both may apply
 

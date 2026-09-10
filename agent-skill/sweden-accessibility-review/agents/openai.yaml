@@ -1,7 +1,7 @@
 interface:
   display_name: "Swedish Accessibility Review"
   short_description: "Review changes against Swedish accessibility rules"
-  default_prompt: "Use $sweden-accessibility-review to review my current frontend changes for Swedish accessibility requirements."
+  default_prompt: "Use $swedish-a11y-review to review current frontend changes for Swedish accessibility requirements."
 
 policy:
   allow_implicit_invocation: false

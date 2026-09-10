@@ -26,17 +26,17 @@ Consult it through a gitignored local mirror at `tools/swedish-a11y-review/`.
 4. Read both of these files before reviewing:
    - `tools/swedish-a11y-review/references/review-method.md`
    - `tools/swedish-a11y-review/references/swedish-law.md`
-5. Review the requested code changes according to those documents. Treat the
-   mirror as read-only and do not edit files inside it.
+5. Review the requested code changes according to those documents and use the
+   compact report format defined in `review-method.md`. Treat the mirror as
+   read-only and do not edit files inside it.
 6. Record the source revision with
    `git -C tools/swedish-a11y-review rev-parse HEAD`.
 
 ## Required handoff
 
-At the end of every review, include:
+At the end of every review, include this line in **Review notes**:
 
-- `Source documents consulted: [files]`
-- `Source revision: [commit SHA]`
+- `Sources: [files] @ [commit SHA]`
 
 Do not claim statutory compliance, WCAG conformance, or absence of legal risk
 from a change-level or automated review.
