@@ -24,8 +24,11 @@ against WCAG without describing findings as legal violations.
 ```
 
 That is all the setup required. On first use, the skill clones this repository
-into the ignored directory. Later reviews update that copy automatically, so
-they use the latest source documents. Git and network access are required.
+into the ignored directory. The project does not need to already have a
+`tools/` directory; the directory is created when needed and is only used here
+as a conventional location for the local mirror. Later reviews update that copy
+automatically, so they use the latest source documents. Git and network access
+are required.
 
 ## Use the skill
 
