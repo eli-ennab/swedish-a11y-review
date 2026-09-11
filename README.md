@@ -42,6 +42,11 @@ The review starts with the relevant Git changes and inspects related code and
 rendered behavior when needed. It is a focused review, not a complete legal or
 WCAG conformance audit.
 
+Reviews use an action-first format designed to stay readable when several
+issues are found: one-line result, numbered findings in priority order, impact
+before detail, one correction per finding, and legal references last. Repeated
+occurrences with the same cause are grouped instead of listed separately.
+
 ## Source documents
 
 - [Review method](references/review-method.md)

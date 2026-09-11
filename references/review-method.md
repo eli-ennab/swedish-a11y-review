@@ -110,26 +110,50 @@ solely on WCAG level.
 
 ## Output
 
-Keep the report short and easy to scan. Do not repeat the review method, provide
-a general accessibility tutorial, or summarize legislation before the
-findings. Group occurrences with the same cause and remediation into one
-finding. Do not omit a material finding merely to shorten the report.
+Shape the report so the next decision is visible without reading the whole
+answer. Brevity alone is not enough: use the same predictable reading order in
+every review.
 
-Lead with findings in severity order. Use this compact format for each one:
+- Start with a one-line result. Do not add a preamble, review-method summary, or
+  general accessibility tutorial.
+- Put findings in severity order and number them. Keep one problem and one
+  corrective action in each finding.
+- Put impact before implementation detail and put the legal or technical basis
+  last. The reader should not need to parse citations to understand the problem.
+- Group occurrences that have the same cause and correction. Do not repeat the
+  same information in a summary and again in the findings.
+- Keep lists to five items where possible. If more than five material findings
+  exist, report all of them but divide them into groups of at most five under
+  short severity headings.
+
+Use one of these result lines:
 
 ```text
-### [High] Short problem title — Confirmed
+**Review result:** 3 findings · highest priority: [High] Checkout errors are not announced
+```
+
+```text
+No accessibility issues were identified in the reviewed scope.
+```
+
+Use this compact format for each finding:
+
+```text
+### 1. [High · Confirmed] Short problem title
 `path/to/file:line` · affected component or journey
 
-Problem: What happens and who is affected.
+What happens and who is affected, in one or two sentences.
+
+**Fix:** The smallest practical correction.
+**Verify:** One concrete test.
+
 Basis: DOS-lagen 10 § · EN 301 549 clause · WCAG criterion, as applicable.
-Fix: The smallest practical correction.
-Verify: One concrete test.
 ```
 
 Use only applicable legal and technical references in `Basis`; omit labels that
-are not established or useful. Keep each field to one or two sentences. Link an
-official legal source once per applicable law, not repeatedly in every finding.
+are not established or useful. Keep the finding focused; use at most two short
+paragraphs before `Basis`. Link an official legal source once per applicable
+law, not repeatedly in every finding.
 
 Finish with a compact **Review notes** section containing only:
 
@@ -138,10 +162,10 @@ Finish with a compact **Review notes** section containing only:
 - **Still manual:** only important checks that remain unresolved
 - **Sources:** documents consulted and source revision
 
-Omit `Still manual` when nothing material remains. Do not include a long list of
-checks that passed. If there are no findings, say: `No accessibility issues were
-identified in the reviewed scope.` Then include the review notes and make clear
-that this is not a conformance finding.
+Omit `Still manual` when nothing material remains. Do not include a list of
+checks that passed or close with a recap, an offer of more help, or an unrelated
+issue. When there are no findings, use the no-findings result line above, then
+include the review notes and make clear that this is not a conformance finding.
 
 Report in the user's language while retaining the official Swedish names of
 laws and authorities. Cite current official sources when making legal claims in
